@@ -1,0 +1,53 @@
+<html>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <body>
+        <input type="email" id="email" required id="email" placeholder="upisi mail"><button onclick="getSubs()">kreni</button>
+
+        <div id="main" hidden>
+            <input type="text" id="sub" placeholder="link kolegija"><button onclick="subscribe()">pretplati</button>
+
+            <h3>Pretplate</h3>
+            <ul id="subs">
+            </ul>
+        </div>
+    </body>
+</html>
+
+<script>
+
+    const getSubs = () => {
+        const email = $('#email').val();
+
+        $.ajax({
+            url: `/api/subscribers/${email}`,
+            type: 'GET'
+        }).done(data => {
+            $('#main').attr('hidden', false);
+            data.endpoints.forEach(endpoint => {
+                $('#subs').append(`<li>${endpoint.title}</li>`);
+            });
+        });
+    }
+
+    const subscribe = () => {
+        const id = $('#sub').val().match(/[0-9]{1,3}$/)[0];
+        const email = $('#email').val();
+        console.log(id);
+        console.log(email);
+        $.ajax({
+            url: `/api/subscribers/${email}/subscription`,
+            type: 'POST',
+            data: {
+                endpoint: id
+            },
+            dataType: 'json'
+        }).done(data => {
+            $('#subs').empty();
+            data.endpoints.forEach(endpoint => {
+                $('#subs').append(`<li>${endpoint.title}</li>`);
+            });
+        })
+    }
+
+</script>
+

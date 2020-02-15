@@ -1,0 +1,30 @@
+{
+    "mail": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "auth": {
+            "user": "mathos.obavijesti@gmail.com",
+            "pass": "18009900a"
+        }
+    },
+    "mathosUser":{
+        "credentials": {
+            "username": "msabo1",
+            "password": "JsMSinsinS!98a"
+        },
+        "sessionDuration": 86400
+    },
+    "baseUrl": "https://www.mathos.unios.hr/index.php/",
+    "database": {
+        "connection": {
+            "type": "postgres",
+            "host": "localhost",
+            "port": 5432,
+            "username": "postgres",
+            "password": "",
+            "database": "mathos-notif",
+            "synchronize": true
+        }
+    },
+    "reloadTime": 10000
+}
