@@ -26,5 +26,5 @@
             "synchronize": true
         }
     },
-    "reloadTime": 10000
+    "reloadTime": 600000
 }
