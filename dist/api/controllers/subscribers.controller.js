@@ -10,7 +10,6 @@ class SubscribersController {
         res.json(subscriber);
     }
     async subsribeToEndpoint(req, res) {
-        console.log(req.headers);
         const email = req.params.email;
         const endpointId = req.body.endpoint;
         const subscriber = await this._subscriberService.subscribeToEndpoint(email, endpointId);

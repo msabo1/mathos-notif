@@ -14,7 +14,6 @@ export class SubscribersController {
 
     async subsribeToEndpoint(req: Request, res: Response){
 
-        console.log(req.headers)
         const email: string = req.params.email;
         const endpointId = req.body.endpoint;
         const subscriber: Subscriber = await this._subscriberService.subscribeToEndpoint(email, endpointId);

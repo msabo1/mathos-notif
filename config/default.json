@@ -18,11 +18,11 @@
     "database": {
         "connection": {
             "type": "postgres",
-            "host": "localhost",
+            "host": "ec2-54-246-90-10.eu-west-1.compute.amazonaws.com",
             "port": 5432,
-            "username": "postgres",
-            "password": "",
-            "database": "mathos-notif",
+            "username": "iifuggiuyvvfjt",
+            "password": "88ea3dd1e0f341fa8a63187bcf6baa2026e98e32edccbbd5f04d724d38050453",
+            "database": "das8kr4sebtck5",
             "synchronize": true
         }
     },

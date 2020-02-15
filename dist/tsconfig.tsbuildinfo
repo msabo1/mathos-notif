@@ -1454,7 +1454,7 @@
         "signature": "6e1c6fe784daeba017901db7766e6b872f535defe33b0e0196d2a12c26f50517"
       },
       "../src/api/controllers/subscribers.controller.ts": {
-        "version": "0c2745e8c179f1fbd654b3b9f604ba355240e335f132f8cd4de4fff27529fcd9",
+        "version": "9af082e9923ea1f1bfc46ab170f321dcee97e1b1d21a5c8a7ad9b6e55d22b668",
         "signature": "fe6290a32ba214ca164f736ad2f00fd5ddb7772d215c103905825e75e9808aaa"
       },
       "../src/api/express.ts": {
@@ -7964,10 +7964,10 @@
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
-      "../src/api/controllers/subscribers.controller.ts",
+      "../src/api/express.ts",
       "../src/index.ts",
       "../node_modules/@types/color-name/index.d.ts",
-      "../src/api/express.ts"
+      "../src/api/controllers/subscribers.controller.ts"
     ]
   },
   "version": "3.7.5"
