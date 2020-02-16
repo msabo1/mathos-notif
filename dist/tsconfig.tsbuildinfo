@@ -1462,7 +1462,7 @@
         "signature": "8fc39541b6aa149ab4de5f24fd93f1e9f6981b740c203e6982662f489427ac36"
       },
       "../src/index.ts": {
-        "version": "d1dd6b4d0ccd87294ea0175b642462e5995b5beb2e6296214fa62f56f6682d10",
+        "version": "445bb66b6d2e3586cb9163e7c6e697aba00078b4b2054ca5a54837a9d3ed5e33",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../node_modules/@types/color-name/index.d.ts": {
@@ -4627,6 +4627,7 @@
       ],
       "../src/index.ts": [
         "../node_modules/@types/nodemailer/index.d.ts",
+        "../node_modules/@types/request-promise/index.d.ts",
         "../src/services/notification.service.ts",
         "../src/services/session.service.ts",
         "../node_modules/typeorm/index.d.ts",
@@ -7964,10 +7965,10 @@
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
+      "../src/api/controllers/subscribers.controller.ts",
       "../src/api/express.ts",
-      "../src/index.ts",
       "../node_modules/@types/color-name/index.d.ts",
-      "../src/api/controllers/subscribers.controller.ts"
+      "../src/index.ts"
     ]
   },
   "version": "3.7.5"

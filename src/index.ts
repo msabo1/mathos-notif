@@ -35,7 +35,7 @@ import { ExpressApi } from './api/express';
 
   //
   setInterval(async () => {
-    await request('https://mathos-notif.herokuapp.com/');
+    await request.get('https://mathos-notif.herokuapp.com/');
   }, 600000)
   
 })();

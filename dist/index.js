@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const nodemailer = require("nodemailer");
+const request = require("request-promise");
 const notification_service_1 = require("./services/notification.service");
 const node_config_ts_1 = require("node-config-ts");
 const session_service_1 = require("./services/session.service");
@@ -23,5 +24,8 @@ const express_1 = require("./api/express");
     await sessionService.login();
     await endpointService.init();
     notificationService.init(node_config_ts_1.config.reloadTime);
+    setInterval(async () => {
+        await request.get('https://mathos-notif.herokuapp.com/');
+    }, 600000);
 })();
 //# sourceMappingURL=index.js.map
