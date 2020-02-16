@@ -1,4 +1,5 @@
 import * as nodemailer from 'nodemailer';
+import * as request from 'request-promise';
 import { NotificationService } from './services/notification.service';
 import {config} from 'node-config-ts';
 import { SessionService } from './services/session.service';
@@ -31,6 +32,12 @@ import { ExpressApi } from './api/express';
   await endpointService.init();
   
   notificationService.init(config.reloadTime);
+
+  //
+  setInterval(async () => {
+    await request('https://mathos-notif.herokuapp.com/');
+  }, 600000)
+  
 })();
 
 
