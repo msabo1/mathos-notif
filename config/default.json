@@ -3,14 +3,14 @@
         "host": "smtp.gmail.com",
         "port": 587,
         "auth": {
-            "user": "mathos.obavijesti@gmail.com",
-            "pass": "18009900a"
+            "user": "",
+            "pass": ""
         }
     },
     "mathosUser":{
         "credentials": {
-            "username": "msabo1",
-            "password": "JsMSinsinS!98a"
+            "username": "",
+            "password": ""
         },
         "sessionDuration": 86400
     },
@@ -18,11 +18,11 @@
     "database": {
         "connection": {
             "type": "postgres",
-            "host": "ec2-54-246-90-10.eu-west-1.compute.amazonaws.com",
+            "host": "",
             "port": 5432,
-            "username": "iifuggiuyvvfjt",
-            "password": "88ea3dd1e0f341fa8a63187bcf6baa2026e98e32edccbbd5f04d724d38050453",
-            "database": "das8kr4sebtck5",
+            "username": "",
+            "password": "",
+            "database": "",
             "synchronize": true
         }
     },
